@@ -12,4 +12,8 @@ $(function () {
 
 	// initialize timer clock
     startTime();
+
+    var randomized = Math.round(19000 + (Math.random() * 899));
+
+    $('body').css('backgroundImage', 'url(https://kbdevstorage1.blob.core.windows.net/asset-blobs/' + randomized + '_en_1)');
 });
