@@ -23,25 +23,29 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <section class="introduction">
+            <header class="siteheader">
+                <h4 id="clock">23:41</h4>
+                <h4 id="greetings">Hello, <font contenteditable="true" id="nameinput"><u>Hustler</u><font size="12">*</font></font>!</h4>
+                <h6 id="clicktoedit">* click underlined to edit</h6>
+            </header>
+        </section>
         <section class="todoapp">
             <header class="header">
-                <h4 id="clock">23:41</h4>
-                <h4 id="greetings">Hello, guest!</h4>
-                <input class="new-todo" placeholder="What needs to be done?" autofocus>
+                <input class="new-todo" placeholder="What's your focus today?" autofocus>
             </header>
             <section class="main">
                 <input class="toggle-all" id="toggle-all" type="checkbox">
-                <label for="toggle-all">Mark all as complete</label>
+                <label for="toggle-all">Mark all as completed</label>
                 <ul class="todo-list"></ul>
             </section>
-            <footer class="footer"></footer>
         </section>
         <footer class="info">
-            <p>Double-click to edit a todo</p>
+            <p>Double-click to edit an item</p>
         </footer>
         <script type="text/template" id="item-template">
             <div class="view">
-                <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
+                <input class="toggle" type="checkbox"<%= completed ? 'checked' : '' %>>
                 <label><%- title %></label>
                 <button class="destroy"></button>
             </div>
@@ -65,7 +69,7 @@
             <% } %>
         </script>
 
-        <section class="footer">
+        <section class="applicationfooter">
             <h5 id="support">Do you like this tool? You can help the developer to keep it alive. Leave a note here and/or donate some satoshis to 1AYLrvxxtUANbfPH9vxmtY5xvNZoMbgoyX</h5>
         </section>
 
